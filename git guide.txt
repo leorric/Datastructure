@@ -1,0 +1,25 @@
+== 取出服务器的仓库的代码到本地建立的目录中，生成在当前目录 ====
+git clone https://github.com/leorric/javawriter.git
+
+git fetch https://github.com/leorric/Datastructure.git  // 从服务器仓库更新（合并）代码，
+
+
+===
+
+…or create a new repository on the command line
+
+touch README.md
+git init
+git add README.md  //添加文件到版本库
+git commit -m "first commit"  //提交，产生版本记录，注意代码依然在本地
+git remote add origin https://github.com/leorric/Datastructure.git //建立映射关系？
+git push -u origin master // 真正提交了代码到服务器上
+
+…or push an existing repository from the command line
+
+git remote add origin https://github.com/leorric/Datastructure.git
+git push -u origin master
+
+…or import code from another repository
+
+You can initialize this repository with code from a Subversion, Mercurial, or TFS project.
