@@ -1,0 +1,15 @@
+1. Every node is either red or black.
+2. The root is always black.
+3. If a node is red, its children must be black (although the converse isn’t
+necessarily true).
+4. Every path from the root to a leaf, or to a null child, must contain the same
+number of black nodes.
+
+==
+rotation left:  right child -> root, root -> left child
+rotation right : left child -> root, root -> right child
+
+====
+
+平衡二叉树（Balanced Binary Tree）又被称为AVL树（有别于AVL算法），且具有以下性质：
+它是一 棵空树或它的左右两个子树的高度差的绝对值不超过1，并且左右两个子树都是一棵平衡二叉树
